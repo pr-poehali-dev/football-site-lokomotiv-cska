@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const lineup = {
-    gk: { number: 1, name: "Митрошкин" },
+    gk: { number: 1, name: "Митрюшкин" },
     defenders: [
       { number: 24, name: "Ненахов" },
       { number: 45, name: "Сильянов" },

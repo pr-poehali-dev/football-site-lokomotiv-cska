@@ -55,7 +55,7 @@ const Index = () => {
           </div>
 
           <p className="text-muted-foreground text-xs md:text-lg">
-            РПЛ • 2024/25
+            РПЛ • 2025/26
           </p>
         </header>
 

@@ -30,7 +30,7 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 md:gap-8 mb-4 md:mb-6">
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/075b5d5e-bb51-4e35-88d0-b71aaf43522c.jpg" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/FC_Lokomotiv_Moscow_Logo.svg/512px-FC_Lokomotiv_Moscow_Logo.svg.png" 
                 alt="Локомотив" 
                 className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
@@ -39,7 +39,7 @@ const Index = () => {
             <div className="text-3xl md:text-6xl font-black text-muted-foreground">VS</div>
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/692b5520-fd5b-428d-b7a8-9502596df538.jpg" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/FC_CSKA_Moscow_Logo.svg/512px-FC_CSKA_Moscow_Logo.svg.png" 
                 alt="ЦСКА" 
                 className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />

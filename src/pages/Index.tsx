@@ -80,7 +80,7 @@ const Index = () => {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-muted-foreground text-sm md:text-base">Дата</span>
-                <span className="font-semibold text-sm md:text-base">18 октября 2024</span>
+                <span className="font-semibold text-sm md:text-base">18 октября 2025</span>
               </div>
             </div>
           </Card>
@@ -206,10 +206,10 @@ const Index = () => {
 const PlayerCard = ({ player }: { player: { number: number; name: string; captain?: boolean } }) => {
   return (
     <div className="group relative hover-scale cursor-pointer">
-      <div className="bg-primary text-primary-foreground rounded-md md:rounded-lg px-2 py-1.5 md:px-4 md:py-3 shadow-lg border-2 border-primary-foreground/20 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
-        <div className="flex items-center gap-1 md:gap-3">
-          <div className="text-base md:text-2xl font-black">{player.number}</div>
-          <div className="text-xs md:text-sm font-semibold whitespace-nowrap">{player.name}</div>
+      <div className="bg-primary text-primary-foreground rounded-md md:rounded-lg px-2 py-1 md:px-4 md:py-3 shadow-lg border-2 border-primary-foreground/20 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
+        <div className="flex items-center gap-1.5 md:gap-3">
+          <div className="text-sm md:text-2xl font-black leading-none">{player.number}</div>
+          <div className="text-[10px] md:text-sm font-semibold whitespace-nowrap leading-tight">{player.name}</div>
           {player.captain && (
             <Icon name="Star" size={12} className="text-yellow-400 fill-yellow-400 md:w-4 md:h-4" />
           )}

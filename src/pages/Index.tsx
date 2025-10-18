@@ -6,7 +6,7 @@ const Index = () => {
   const lineup = {
     gk: { number: 1, name: "Митрюшкин" },
     defenders: [
-      { number: 24, name: "Ненахов" },
+      { number: 3, name: "Фассон" },
       { number: 45, name: "Сильянов" },
       { number: 23, name: "Монтес" },
       { number: 5, name: "Ньямси" }

@@ -139,35 +139,35 @@ const Index = () => {
             </Badge>
           </div>
 
-          <div className="relative bg-accent/20 rounded-xl p-4 md:p-8 min-h-[500px] md:min-h-[600px] border-2 border-accent/40"
+          <div className="relative bg-accent/20 rounded-xl p-3 md:p-8 min-h-[480px] md:min-h-[600px] border-2 border-accent/40"
             style={{
               backgroundImage: 'linear-gradient(0deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px)',
               backgroundSize: '40px 40px'
             }}>
             
-            <div className="absolute top-8 left-1/2 -translate-x-1/2">
+            <div className="absolute top-6 left-1/2 -translate-x-1/2">
               <PlayerCard player={lineup.striker} />
             </div>
 
-            <div className="absolute top-[120px] md:top-[140px] left-1/2 -translate-x-1/2 flex gap-2 md:gap-8">
+            <div className="absolute top-[100px] md:top-[140px] left-1/2 -translate-x-1/2 flex gap-1.5 md:gap-8">
               {lineup.cam.map((player, idx) => (
                 <PlayerCard key={idx} player={player} />
               ))}
             </div>
 
-            <div className="absolute top-[220px] md:top-[280px] left-1/2 -translate-x-1/2 flex gap-4 md:gap-16">
+            <div className="absolute top-[180px] md:top-[280px] left-1/2 -translate-x-1/2 flex gap-3 md:gap-16">
               {lineup.cdm.map((player, idx) => (
                 <PlayerCard key={idx} player={player} />
               ))}
             </div>
 
-            <div className="absolute bottom-[120px] md:bottom-[140px] left-1/2 -translate-x-1/2 flex gap-1 md:gap-6">
+            <div className="absolute bottom-[100px] md:bottom-[140px] left-1/2 -translate-x-1/2 flex gap-0.5 md:gap-6">
               {lineup.defenders.map((player, idx) => (
                 <PlayerCard key={idx} player={player} />
               ))}
             </div>
 
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
               <PlayerCard player={lineup.gk} />
             </div>
 

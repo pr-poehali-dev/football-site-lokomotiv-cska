@@ -30,18 +30,18 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 md:gap-8 mb-4 md:mb-6">
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/35bbf529-3218-42cc-8498-6395fa32eb53.jpg" 
+                src="https://www.fclm.ru/upload/iblock/aaa/9e8dknqrcggyhbvjzf86nzhzl38xekzp/gerb_vert.png" 
                 alt="Локомотив" 
-                className="w-16 h-16 md:w-24 md:h-24 object-cover rounded-full shadow-lg"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h1 className="text-2xl md:text-5xl font-bold text-primary">Локомотив</h1>
             </div>
             <div className="text-3xl md:text-6xl font-black text-muted-foreground">VS</div>
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/90f33bf3-5648-4d6d-bd80-af41c1b1d74d.jpg" 
+                src="https://www.pfc-cska.com/upload/iblock/logo.png" 
                 alt="ЦСКА" 
-                className="w-16 h-16 md:w-24 md:h-24 object-cover rounded-full shadow-lg"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h1 className="text-2xl md:text-5xl font-bold text-secondary">ЦСКА</h1>
             </div>

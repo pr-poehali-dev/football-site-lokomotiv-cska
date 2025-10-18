@@ -39,7 +39,7 @@ const Index = () => {
             <div className="text-3xl md:text-6xl font-black text-muted-foreground">VS</div>
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/files/b04ee148-13cc-4e39-9ada-a8fee637a7fe.jpeg" 
+                src="https://cdn.poehali.dev/files/dce6f508-9f02-47f1-8a20-63eec7f7c09a.png" 
                 alt="ЦСКА" 
                 className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />

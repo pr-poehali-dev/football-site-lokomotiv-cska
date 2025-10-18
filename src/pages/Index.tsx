@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
-  const lineup = {
+  const lokomotivLineup = {
     gk: { number: 1, name: "Митрюшкин" },
     defenders: [
       { number: 3, name: "Фассон" },
@@ -21,6 +21,28 @@ const Index = () => {
       { number: 19, name: "Руденко" }
     ],
     striker: { number: 10, name: "Воробьёв" }
+  };
+
+  const cskaLineup = {
+    gk: { number: 49, name: "Тороп" },
+    defenders: [
+      { number: 3, name: "Круговой" },
+      { number: 4, name: "Виктор" },
+      { number: 78, name: "Дивеев" }
+    ],
+    wingbacks: [
+      { number: 90, name: "Лукин" },
+      { number: 17, name: "Глебов" }
+    ],
+    midfielders: [
+      { number: 10, name: "Обляков", captain: true },
+      { number: 22, name: "Гайич" }
+    ],
+    attackers: [
+      { number: 31, name: "Кисляк" },
+      { number: 37, name: "Кармо" },
+      { number: 9, name: "Алеррандро" }
+    ]
   };
 
   return (
@@ -156,29 +178,29 @@ const Index = () => {
             }}>
             
             <div className="absolute top-6 left-1/2 -translate-x-1/2">
-              <PlayerCard player={lineup.striker} />
+              <PlayerCard player={lokomotivLineup.striker} />
             </div>
 
             <div className="absolute top-[100px] md:top-[140px] left-1/2 -translate-x-1/2 flex gap-1.5 md:gap-8">
-              {lineup.cam.map((player, idx) => (
+              {lokomotivLineup.cam.map((player, idx) => (
                 <PlayerCard key={idx} player={player} />
               ))}
             </div>
 
             <div className="absolute top-[180px] md:top-[280px] left-1/2 -translate-x-1/2 flex gap-3 md:gap-16">
-              {lineup.cdm.map((player, idx) => (
+              {lokomotivLineup.cdm.map((player, idx) => (
                 <PlayerCard key={idx} player={player} />
               ))}
             </div>
 
             <div className="absolute bottom-[100px] md:bottom-[140px] left-1/2 -translate-x-1/2 flex gap-0.5 md:gap-6">
-              {lineup.defenders.map((player, idx) => (
+              {lokomotivLineup.defenders.map((player, idx) => (
                 <PlayerCard key={idx} player={player} />
               ))}
             </div>
 
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-              <PlayerCard player={lineup.gk} />
+              <PlayerCard player={lokomotivLineup.gk} />
             </div>
 
             <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-background/80 backdrop-blur-sm px-2 py-1 md:px-4 md:py-2 rounded-lg border border-border">
@@ -208,15 +230,68 @@ const Index = () => {
             </div>
           </div>
         </Card>
+
+        <Card className="p-4 md:p-8 bg-gradient-to-b from-secondary/10 to-secondary/5 border-secondary/30 mt-6 md:mt-8">
+          <div className="mb-3 md:mb-4">
+            <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 md:px-3 md:py-1.5">
+              <Icon name="Info" size={14} className="mr-1 md:mr-2" />
+              Предположительный состав
+            </Badge>
+          </div>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-0 mb-4 md:mb-8">
+            <h2 className="text-xl md:text-3xl font-bold flex items-center gap-2">
+              <Icon name="Clipboard" size={24} className="text-secondary md:w-8 md:h-8" />
+              Состав ЦСКА
+            </h2>
+            <Badge variant="outline" className="text-xs md:text-lg px-2 py-1 md:px-4 md:py-2 border-secondary text-secondary">
+              3-4-3
+            </Badge>
+          </div>
+
+          <div className="relative bg-secondary/20 rounded-xl p-3 md:p-8 min-h-[480px] md:min-h-[600px] border-2 border-secondary/40"
+            style={{
+              backgroundImage: 'linear-gradient(0deg, rgba(239, 68, 68, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(239, 68, 68, 0.1) 1px, transparent 1px)',
+              backgroundSize: '40px 40px'
+            }}>
+            
+            <div className="absolute top-6 left-1/2 -translate-x-1/2 flex gap-1.5 md:gap-8">
+              {cskaLineup.attackers.map((player, idx) => (
+                <PlayerCard key={idx} player={player} isOpponent />
+              ))}
+            </div>
+
+            <div className="absolute top-[100px] md:top-[140px] left-1/2 -translate-x-1/2 flex gap-3 md:gap-16">
+              {cskaLineup.midfielders.map((player, idx) => (
+                <PlayerCard key={idx} player={player} isOpponent />
+              ))}
+            </div>
+
+            <div className="absolute top-[180px] md:top-[280px] left-1/2 -translate-x-1/2 flex gap-20 md:gap-32">
+              {cskaLineup.wingbacks.map((player, idx) => (
+                <PlayerCard key={idx} player={player} isOpponent />
+              ))}
+            </div>
+
+            <div className="absolute bottom-[100px] md:bottom-[140px] left-1/2 -translate-x-1/2 flex gap-1 md:gap-10">
+              {cskaLineup.defenders.map((player, idx) => (
+                <PlayerCard key={idx} player={player} isOpponent />
+              ))}
+            </div>
+
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+              <PlayerCard player={cskaLineup.gk} isOpponent />
+            </div>
+          </div>
+        </Card>
       </div>
     </div>
   );
 };
 
-const PlayerCard = ({ player }: { player: { number: number; name: string; captain?: boolean } }) => {
+const PlayerCard = ({ player, isOpponent = false }: { player: { number: number; name: string; captain?: boolean }, isOpponent?: boolean }) => {
   return (
     <div className="group relative hover-scale cursor-pointer">
-      <div className="bg-primary text-primary-foreground rounded-md md:rounded-lg px-1.5 py-1 md:px-4 md:py-3 shadow-lg border-2 border-primary-foreground/20 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
+      <div className={`${isOpponent ? 'bg-secondary text-secondary-foreground' : 'bg-primary text-primary-foreground'} rounded-md md:rounded-lg px-1.5 py-1 md:px-4 md:py-3 shadow-lg border-2 ${isOpponent ? 'border-secondary-foreground/20' : 'border-primary-foreground/20'} transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110`}>
         <div className="flex items-center gap-1 md:gap-3">
           <div className="text-xs md:text-2xl font-black leading-none">{player.number}</div>
           <div className="text-[9px] md:text-sm font-semibold whitespace-nowrap leading-tight">{player.name}</div>

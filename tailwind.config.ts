@@ -90,6 +90,11 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
+		},
+		classes: {
+			'.hover-scale': {
+				'@apply': 'transition-transform duration-300 hover:scale-105'
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

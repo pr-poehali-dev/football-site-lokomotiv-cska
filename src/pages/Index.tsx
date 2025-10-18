@@ -30,18 +30,18 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 md:gap-8 mb-4 md:mb-6">
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/47f1e119-0a35-428c-baa1-09e6d2b45c49.jpg" 
+                src="https://logodownload.org/wp-content/uploads/2020/03/lokomotiv-moscow-logo-0.png" 
                 alt="Локомотив" 
-                className="w-16 h-16 md:w-24 md:h-24 object-contain rounded-full bg-white p-1"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h1 className="text-2xl md:text-5xl font-bold text-primary">Локомотив</h1>
             </div>
             <div className="text-3xl md:text-6xl font-black text-muted-foreground">VS</div>
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/3d853348-3c6e-421c-a7e4-7686c62e08ab.jpg" 
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/PFC_CSKA_Moscow.svg/1200px-PFC_CSKA_Moscow.svg.png" 
                 alt="ЦСКА" 
-                className="w-16 h-16 md:w-24 md:h-24 object-contain rounded-full bg-white p-1"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h1 className="text-2xl md:text-5xl font-bold text-secondary">ЦСКА</h1>
             </div>

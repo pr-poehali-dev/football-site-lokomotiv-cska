@@ -28,12 +28,22 @@ const Index = () => {
       <div className="container mx-auto px-3 py-4 md:px-4 md:py-8 max-w-7xl">
         <header className="mb-6 md:mb-12 text-center animate-fade-in">
           <div className="flex items-center justify-center gap-3 md:gap-8 mb-4 md:mb-6">
-            <div className="text-right">
-              <h1 className="text-2xl md:text-5xl font-bold text-primary mb-1 md:mb-2">Локомотив</h1>
+            <div className="flex flex-col items-center gap-2">
+              <img 
+                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/075b5d5e-bb51-4e35-88d0-b71aaf43522c.jpg" 
+                alt="Локомотив" 
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
+              />
+              <h1 className="text-2xl md:text-5xl font-bold text-primary">Локомотив</h1>
             </div>
             <div className="text-3xl md:text-6xl font-black text-muted-foreground">VS</div>
-            <div className="text-left">
-              <h1 className="text-2xl md:text-5xl font-bold text-secondary mb-1 md:mb-2">ЦСКА</h1>
+            <div className="flex flex-col items-center gap-2">
+              <img 
+                src="https://cdn.poehali.dev/projects/8da5d157-cd6f-4f7f-bc9d-b02b2f4d4a10/files/692b5520-fd5b-428d-b7a8-9502596df538.jpg" 
+                alt="ЦСКА" 
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
+              />
+              <h1 className="text-2xl md:text-5xl font-bold text-secondary">ЦСКА</h1>
             </div>
           </div>
           

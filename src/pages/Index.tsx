@@ -30,7 +30,7 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 md:gap-8 mb-4 md:mb-6">
             <div className="flex flex-col items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/files/d1ac62c5-cc79-41b3-af1b-fbda988e774c.jpeg" 
+                src="https://cdn.poehali.dev/files/f68df111-8f49-4317-b8fe-550c0e08c930.png" 
                 alt="Локомотив" 
                 className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />

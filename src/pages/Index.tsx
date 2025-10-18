@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const lineup = {
-    gk: { number: 1, name: "Вратарь" },
+    gk: { number: 1, name: "Митрошкин" },
     defenders: [
       { number: 24, name: "Ненахов" },
       { number: 45, name: "Сильянов" },
@@ -123,6 +123,12 @@ const Index = () => {
         </div>
 
         <Card className="p-4 md:p-8 bg-gradient-to-b from-accent/10 to-accent/5 border-accent/30">
+          <div className="mb-3 md:mb-4">
+            <Badge variant="secondary" className="text-xs md:text-sm px-2 py-1 md:px-3 md:py-1.5">
+              <Icon name="Info" size={14} className="mr-1 md:mr-2" />
+              Предположительный состав
+            </Badge>
+          </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-0 mb-4 md:mb-8">
             <h2 className="text-xl md:text-3xl font-bold flex items-center gap-2">
               <Icon name="Clipboard" size={24} className="text-primary md:w-8 md:h-8" />
